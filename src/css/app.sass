@@ -14,7 +14,17 @@
         display: none
     @media (min-width: $breakpoint-sm-min)
         display: block
-    
+
+.x-large-screen-only
+    @media (max-width: $breakpoint-sm-max)
+        display: none
+    @media (min-width: $breakpoint-md-min)
+        display: block
+
 .constrain
     max-width: 975px
+    margin: 0 auto
+
+.constrain-more
+    max-width: 620px
     margin: 0 auto
